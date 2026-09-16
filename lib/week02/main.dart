@@ -22,7 +22,10 @@ void main() {
   print('Books by author: ${library.booksByAuthor}');
   print('Author names: ${library.authorNames}');
   print('Genres: ${library.genres}');
-  print('Display list: ${library.displayList}');
+  print('Display list:');
+  for (final item in library.displayList) {
+    print(item);
+  }
 
   final stats = statsOf(books);
 

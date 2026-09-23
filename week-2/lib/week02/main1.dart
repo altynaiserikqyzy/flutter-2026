@@ -15,8 +15,10 @@ void main() {
   }
 
   library.open();
-
-  print('Titles: ${library.titles}');
+  print('\n');
+  for(final title in library.titles){
+    print('Title: $title');
+  }
   print('Books after 2010: ${library.booksAfter2010}');
   print('Average pages: ${library.averagePages}');
   print('Books by author: ${library.booksByAuthor}');
